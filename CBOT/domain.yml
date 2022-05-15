@@ -1,0 +1,294 @@
+version: "3.0"
+
+intents:
+  - intro
+  - adeus
+  - afirmação
+  - negação
+  - declara
+  - condicional
+  - loop
+  - ajuda
+  - teste
+  - dica
+  - challenge
+  - exercicio 
+  - bs_exe
+  - dfs_exe
+  - qs_exe
+  - operar 
+  - recursar
+  - print
+  - tree
+
+
+responses:
+  utter_intro:
+  - text: "Olá! Eu sou Ali-Cbot e posso lhe ensinar sobre alguns conceitos e algoritmos da linguagem de programação C."
+
+  utter_intro_dois:
+  - text: "Você deseja saber detalhes sobre o que posso oferecer?"
+  
+  utter_explain:
+  - text: " Meu objetivo é ajudar programadores à entender a lógica por trás de certos algoritmos famosos, mas também posso explicar certos conceitos de programação para você."
+  
+  utter_explain_dois:
+  - text: " Se você quer aprender sobre um certo conceito de programação, você pode me perguntar algo como: 'O que é recursão?' ou 'Como faço uma recursão?'."
+
+  utter_explain_tres:
+  - text: " Já se você quer tentar aprender sobre o funcionamento e estrutura de um dos algoritmos mais famososos que usam a linguagem C, você pode me dizer 'Quero fazer um exercício' ou 'Quero fazer um quiz'."
+
+  utter_adeus:
+  - text: "Até mais!"
+  
+  utter_exes:
+  - text: "Posso-lhe ajudar à entender e lembrar a lógica por trás de três conhecidos e importantes programas em C, estes são: Procura binária, Busca em profundidade e Quicksort. Qual destes você deseja aprender?"
+  
+  utter_bs_exe:
+  - text: "Um algoritmo de busca binária encontra a posição de 'x' dentro de uma array ordenada."
+  
+  utter_bs_exe_um_um:
+  - text: " Isso é feito ao comparar o valor de 'x' ao elemento localizado na metade da array, com o objetivo de considerar após apenas a partição da array em que o número poderá ser encontrado visto se é maior ou não que esse valor na metade."
+  
+  utter_bs_exe_um_dois:
+  - text: " O processo é então repetido utilizando precursões para dividir partições cada vez menores até que o número seja encontrado ou não."
+
+  utter_bs_exe_dois: 
+  - text: "Considere a função que implementa busca binária, note como está incompleta"
+    image: "https://i.imgur.com/EeCvs1P.png"
+
+  utter_bs_exe_tres:
+  - text: "Para ajudar entender a lógica da busca binária considere este exemplo: Buscamos encontrar o número 20. Observe como já estamos apenas considerando a metade superior da array visto que 20 é maior que o elemento na metade da chamada anterior (10), logo, os extremos da partição atual serão um elemento após a metade anterior (posição 4) e o fim da array (posição 6) e o elemento na metade, que será comparado é 15 (posição 5)."
+    image: "https://i.imgur.com/BbBWoDM.png"
+
+  utter_bs_exe_quatro:
+  - text: "O primeiro passo na lógica do programa é realizar o cálculo que determina qual é o número da posição no meio entre os dois extremos. Seguindo o exemplo fornecido, observe a imagem que explica a lógica por trás deste cálculo."
+    image: "https://i.imgur.com/EMDUmsA.png"
+ 
+  utter_dfs_exe:
+  - text: "Em um algoritmo de busca em profundidade, deve-se percorrer cada nodo de uma árvore binária a partir de sua raiz, atingindo a profundidade máxima de cada caminho."
+
+  utter_dfs_exe_um_um:
+  - text: "O percorrer da árvore e a impressão de seus valores geralmente se dá por três ordens diferentes: Em-ordem; Pre-ordem; e Pós-ordem, porém neste exemplo focaremos no método por trás da travessia Em-ordem."
+
+  utter_dfs_exe_dois:
+  - text: "O código incompleto do algoritmo é:"
+    image: "https://i.imgur.com/pkfGwtq.png"
+
+  utter_dfs_exe_tres:
+  - text: "Na imagem ilustrando como o percurso em-ordem ocorre, observe que sempre que há um nodo esquerdo filho, este nodo terá prioridade sobre um nodo filho direito. Logo, a primeira coisa a se fazer quando em um nodo é buscar o nodo filho esquerdo deste, e assim por diante em seu filho."
+
+  utter_dfs_exe_tres_um:
+  - text: "Pense nessa execução que é recursiva como abrir várias caixas que contém caixas menores até que se chegue na última caixa."
+    image: "https://i.imgur.com/liC2OT6.png" 
+
+  utter_congratulate:
+  - text: "Parabéns, você resolveu o exercício!"
+  
+  utter_qs_exe:
+  - text: "O algoritmo Quicksort ordena arrays, sua metodologia envolve a criação partições da array a partir de comparações com um elemento pivô, após essas comparações deve-se trocar elementos de lugar dentro de cada partição, a dividindo em elementos menores que o pivô e elementos maiores que o mesmo." 
+
+  utter_qs_exe_um:
+  - text: "A forma em que o elemento pivô de uma partição é escolhido a critério do programador porém neste exemplo o pivô de uma partição será sempre o seu último elemento."
+  
+  utter_qs_exe_dois:
+  - text: "Complete o processo chave em um quicksort, a criação de partições, nesta, é preciso ordenar o elemento pivô ao comparara-lo com cada elemento da partição"
+    image: "https://i.imgur.com/kOTRAse.png"
+
+  utter_bs_pause:
+  - text: "Ok! vamos pausar esse exercício. Se você desejar voltar para resolver-lo me peça para voltar para o exercício de busca binária."
+  
+  utter_dfs_pause:
+  - text: "Ok! vamos pausar esse exercício. Se você desejar voltar para resolver-lo me peça para voltar para o exercício de busca em profundidade."
+  
+  utter_qs_pause:
+  - text: "Ok! vamos pausar esse exercício. Se você desejar voltar para resolver-lo me peça para voltar para o exercício de quicksort."
+
+  utter_operar:
+  - text: 'Operações são um dos fundamentos em qualquer linguagem de programação, um dos tipos de operação possíveis são as operações aritméticas, nessas operações podemos utilizar operadores como "+" e "*" para realizar computações matemáticas e lógicas em operandos (variáveis).'
+   
+  utter_operar_dois:
+  - text: 'A linha de código por exemplo utiliza 3 operandos e um operador aritmético para realizar a soma de a com b.'
+  
+  utter_operar_tres:
+  - text: " c = a + b;"
+  
+  utter_operar_quatro:
+  - text: "Em C, operadores estão sujeitos a diferentes precedências de operação, o que permite que expressões com mais de um operador sejam realizadas corretamente."
+  
+  utter_operar_cinco:
+  - text: 'Por exemplo na linha de código "int a = 10 + 20 * 30;" Como ditado matematicamente, a operação "20 * 30" vai ser computada primeiramente, então o valor resultante "600" é operado junto a 10, o que atribui o valor "610" a variável "a";' 
+  
+  utter_operar_seis:
+  - text: "O uso de parênteses não é obrigatório porém é uma prática recomendada pois resulta em um código interpretado mais facilmente, essa prática é cobrada em nosso quiz."
+  
+  utter_recursao_dois:
+  - text: "Recursão é um processo em que uma função é chamada dentro de si mesmo. A ideia é resolver um problema maior através de uma ou mais execuções menores iguais."
+  
+  utter_recursao_tres:
+  - text: "Um exemplo de chamada recursiva é:"
+    image: "https://i.imgur.com/X7oIHgM.png"
+
+  utter_print:
+  - text: "O ato de imprimir na tela algum tipo de informação referente á execução do programa é essencial em qualquer linguagem. Como em outras linguagens de programação, C possui uma função padrão para impressão."
+  
+  utter_print_dois:
+  - text: 'A sintaxe da função é "printf(const char * formato, variavel);".'
+  
+  utter_print_tres:
+  - text: 'Em "formato", é escrita uma string ou o especificador ao tipo de variável a ser imprimida, neste caso, a variável deve ser inserida em "variavel".'
+  
+  utter_print_quatro:
+  - text: "O especificador deve ser inserido em forma de string, começando pelo caractere % seguido de uma letra respectiva ao tipo da variável. Tipos geralmente vistos são: f (float), d (inteiro) e c (char)."
+  
+  utter_tree:
+  - text: 'Na computação, uma árvore é uma forma de estruturar dados em diferentes nodos que são ligados a si, cada nodo pertence à um certo nível "n", isso diz que um nodo apenas pode estar ligado à nodos no nível "n-1" e "n+1", isso é dito como relação de nodo-pai (no nível "n") com nodo-filho (nível "n+1").'
+  
+  utter_tree_dois:
+  - text: "Em uma árvore binária, um nodo pode apenas se relacionar com até dois nodos-filho, tipicamente estes dois nodos são denominados nodo-filho esquerdo e nodo-filho direito."
+  
+  utter_tree_tres:
+  - text: "Observe o código exemplo responsável pela declaração da estrutura de uma árvore binária e o método responsável pela criação dos nodos e sua relação"
+    image: "https://i.imgur.com/Z1iKh89.png"
+
+  utter_please_rephrase:
+  - text: "Desculpe, não entendi o que você quis dizer, pode tentar de novo?"
+
+  utter_okay:
+  - text: "Okay!"
+
+  utter_continue:
+  - text: "Você gostaria de aprender mais detalhes?"
+
+  utter_exe_ask:
+  - text: "Você gostaria de realizar esse quiz? Lembre que você deve reescrever a linha inteira em cada resposta!"
+
+  utter_exe_ask_dois:
+  - text: "Você também pode pausar o quiz para me perguntar qualquer coisa se assim desejar, basta me pedir isso durante o quiz."
+
+
+
+
+actions:
+- validate_bs_form
+- action_ask_bs_um
+- action_ask_bs_dois
+- validate_dfs_form
+- action_ask_dfs_um
+- action_ask_dfs_dois
+- action_ask_dfs_tres
+- validate_qs_form
+- action_ask_qs_um
+- action_ask_qs_dois
+- action_ask_qs_tres
+- action_ask_qs_quatro
+- action_ask_qs_cinco
+- action_reset_bs_um_slot
+- action_reset_bs_dois_slot
+- action_reset_dfs_um_slot
+- action_reset_dfs_dois_slot
+- action_reset_dfs_tres_slot
+- action_reset_qs_um_slot
+- action_reset_qs_dois_slot
+- action_reset_qs_tres_slot
+- action_reset_qs_quatro_slot
+- action_reset_qs_cinco_slot
+
+slots:
+  bs_um:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: bs_form
+        requested_slot: bs_um
+  bs_dois:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: bs_form
+        requested_slot: bs_dois
+  dfs_um:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: dfs_form
+        requested_slot: dfs_um
+  dfs_dois:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: dfs_form
+        requested_slot: dfs_dois
+  dfs_tres:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: dfs_form
+        requested_slot: dfs_tres
+  qs_um:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: qs_form
+        requested_slot: qs_um
+  qs_dois:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: qs_form
+        requested_slot: qs_dois
+  qs_tres:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: qs_form
+        requested_slot: qs_tres
+  qs_quatro:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: qs_form
+        requested_slot: qs_quatro
+  qs_cinco:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: qs_form
+        requested_slot: qs_cinco
+forms:
+ bs_form:
+  ignored_intents:
+  - ajuda
+  required_slots:
+    - bs_um  
+    - bs_dois
+ dfs_form:
+  ignored_intents:
+  - ajuda
+  required_slots:
+    - dfs_um 
+    - dfs_dois
+    - dfs_tres
+ qs_form:
+  ignored_intents:
+  - ajuda
+  required_slots:
+    - qs_um
+    - qs_dois
+    - qs_tres
+    - qs_quatro
+    - qs_cinco
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+  

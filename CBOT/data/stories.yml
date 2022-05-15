@@ -1,0 +1,201 @@
+version: "3.0"
+
+stories:
+- story: say hello
+  steps:
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_dois
+  - intent: afirmação
+  - action: utter_explain
+  - action: utter_explain_dois
+  - action: utter_explain_tres
+
+- story: parar
+  steps:
+  - intent: ajuda
+  - action: utter_okay
+
+- story: say hello deny
+  steps:
+  - intent: intro
+  - action: utter_intro
+  - action: utter_intro_dois
+  - intent: negação
+  - action: utter_okay
+
+- story: say goodbye
+  steps:
+  - intent: adeus
+  - action : utter_adeus
+
+
+- story: say goodbye
+  steps:
+  - intent: adeus
+  - action : utter_adeus
+
+- story: operar
+  steps:
+  - intent: operar
+  - action : utter_operar
+  - action : utter_operar_dois
+  - action : utter_operar_tres
+  - action : utter_continue
+  - intent : afirmação
+  - action : utter_operar_quatro
+  - action : utter_operar_cinco
+  - action : utter_operar_seis
+
+- story: operar deny
+  steps:
+  - intent: operar
+  - action : utter_operar
+  - action : utter_operar_dois
+  - action : utter_operar_tres
+  - action : utter_continue
+  - intent : negação
+  - action : utter_okay
+
+- story: recursao
+  steps:
+  - intent: recursar
+  - action : utter_recursao_dois
+  - action : utter_recursao_tres
+
+- story: print
+  steps:
+  - intent: print
+  - action : utter_print
+  - action: utter_continue
+  - intent: afirmação
+  - action : utter_print_dois
+  - action : utter_print_tres
+  - action : utter_print_quatro
+
+- story: print deny
+  steps:
+  - intent: print
+  - action : utter_print
+  - action: utter_continue
+  - intent: negação
+  - action : utter_okay
+
+- story: tree
+  steps:
+  - intent: tree
+  - action : utter_tree
+  - action : utter_tree_dois
+  - action : utter_continue
+  - intent : afirmação
+  - action : utter_tree_tres
+
+- story: tree deny
+  steps:
+  - intent: tree
+  - action : utter_tree
+  - action : utter_tree_dois
+  - action : utter_continue
+  - intent : negação
+  - action : utter_okay
+ 
+- story: Activate binary search form
+  steps:
+  - intent: exercicio
+  - action: utter_exes
+  - intent: bs_exe
+  - action: utter_bs_exe
+  - action: utter_bs_exe_dois
+  - action: utter_exe_ask
+  - action: utter_exe_ask_dois
+  - intent: afirmação
+  - action: utter_bs_exe_tres
+  - action: utter_bs_exe_quatro
+  - action: bs_form
+  - active_loop: bs_form
+
+- story: deny Activate binary search form
+  steps:
+  - intent: exercicio
+  - action: utter_exes
+  - intent: bs_exe
+  - action: utter_bs_exe
+  - action: utter_bs_exe_dois
+  - action: utter_exe_ask
+  - action: utter_exe_ask_dois
+  - intent: negação
+  - action: utter_okay
+
+- story: Activate dfs
+  steps:
+  - intent: exercicio
+  - action: utter_exes
+  - intent: dfs_exe
+  - action: utter_dfs_exe
+  - action: utter_dfs_exe_dois
+  - action: utter_exe_ask
+  - action: utter_exe_ask_dois
+  - intent: afirmação
+  - action: utter_dfs_exe_tres
+  - action: dfs_form
+  - active_loop: dfs_form
+
+- story: Activate dfs deny
+  steps:
+  - intent: exercicio
+  - action: utter_exes
+  - intent: dfs_exe
+  - action: utter_dfs_exe
+  - action: utter_dfs_exe_dois
+  - action: utter_exe_ask
+  - action: utter_exe_ask_dois
+  - intent: negação
+  - action: utter_okay
+
+- story: REActivate bs
+  steps:
+  - intent: bs_exe
+  - action: bs_form
+  - active_loop: bs_form
+
+- story: REActivate dfs
+  steps:
+  - intent: dfs_exe
+  - action: dfs_form
+  - active_loop: dfs_form
+
+- story: REActivate qs
+  steps:
+  - intent: qs_exe
+  - action: qs_form
+  - active_loop: qs_form
+
+- story: Activate quicksort
+  steps:
+  - intent: exercicio
+  - action: utter_exes
+  - intent: qs_exe
+  - action: utter_qs_exe
+  - action: utter_qs_exe_dois
+  - action: utter_exe_ask
+  - action: utter_exe_ask_dois
+  - intent: afirmação
+  - action: qs_form
+  - active_loop: qs_form
+
+- story: Activate quicksort deny
+  steps:
+  - intent: exercicio
+  - action: utter_exes
+  - intent: qs_exe
+  - action: utter_qs_exe
+  - action: utter_qs_exe_dois
+  - action: utter_exe_ask
+  - action: utter_exe_ask_dois
+  - intent: negação
+  - action: utter_okay
+
+
+
+
+

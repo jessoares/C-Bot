@@ -1,0 +1,76 @@
+version: "3.0"
+
+rules:
+
+- rule: ajuda bfs
+  condition:
+  - active_loop: bs_form
+  steps:
+  - intent: ajuda
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: utter_bs_pause
+
+- rule: ajuda dfs
+  condition:
+  - active_loop: dfs_form
+  steps:
+  - intent: ajuda
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: utter_dfs_pause
+
+- rule: ajuda qs
+  condition:
+  - active_loop: qs_form
+  steps:
+  - intent: ajuda
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: utter_qs_pause
+
+- rule: end bs
+  condition:
+  - active_loop: bs_form
+  steps:
+  - action: bs_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_congratulate
+  - action: action_reset_bs_um_slot
+  - action: action_reset_bs_dois_slot
+
+- rule: end dfs
+  condition:
+  - active_loop: dfs_form
+  steps:
+  - action: dfs_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_congratulate
+  - action: action_reset_dfs_um_slot
+  - action: action_reset_dfs_dois_slot
+  - action: action_reset_dfs_tres_slot
+
+- rule: end qs
+  condition:
+  - active_loop: qs_form
+  steps:
+  - action: qs_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: utter_congratulate
+  - action: action_reset_qs_um_slot
+  - action: action_reset_qs_dois_slot
+  - action: action_reset_qs_tres_slot
+  - action: action_reset_qs_quatro_slot
+  - action: action_reset_qs_cinco_slot
+ 
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase

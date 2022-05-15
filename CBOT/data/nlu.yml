@@ -1,0 +1,124 @@
+version: "3.0"
+nlu:
+- intent: intro
+  examples: |
+    - oi
+    - olá
+    - bom dia
+    - boa tarde
+    - boa noite
+    - Vamos lá
+    - Eai cara
+    - oii
+
+- intent: adeus
+  examples: |
+    - tchau
+    - adeus
+    - até mais
+    - até mais tarde
+    - tenha um bom dia
+    - bye bye
+    - não obrigado
+
+
+- intent: exercicio
+  examples: |
+    - exercicio
+    - quero fazer exercicio
+    - quais exercicios posso fazer?
+    - exercicios
+    - quero fazer um quiz
+    - quiz
+    - fazer quiz
+    - fazer exercicio
+    - programar
+    - eu quero programar
+    - algoritmos
+    - quero fazer um algoritmo
+
+- intent: afirmação
+  examples: |
+    - sim
+    - claro
+    - isso
+    - parece bom
+    - correto
+    - pode ser
+    - okay
+    - vamos lá
+    - vamos
+    - yup
+    - yes
+    - eu quero
+
+- intent: negação
+  examples: |
+    - jamais
+    - nunca
+    - acho que não
+    - não
+    - não mesmo
+    - não quero
+    - nah
+
+- intent: challenge
+  examples: |
+   - Quem é você?
+   - Você é um chatbot?
+   - Você é um robô?
+   - Estou falando com uma pessoa?
+   - Você é humano?
+
+- intent: ajuda
+  examples: |
+    - Estou com dificuldade
+    - Não estou conseguindo fazer isso
+    - Me ajude
+    - Ajuda
+    - Quero perguntar algo
+    - quero perguntar
+    - perguntar
+    - quero pausar
+    - pause
+    - pausar exercicio
+    - quero pausar o exercicip
+    - pausar
+    - pare
+    - parar
+    - quero parar
+    - quero parar o exercicio
+    - parar exercicio
+    - pare exercicio
+
+- intent: bs_exe
+  examples: |
+   - procura binária
+   - binária
+
+- intent: dfs_exe
+  examples: |
+   - busca em profundidade
+   - busca 
+
+- intent: qs_exe
+  examples: |
+   - quicksort
+   - quick
+   - sort
+
+- intent: operar
+  examples: |
+   - operação
+
+- intent: recursar
+  examples: |
+   - recursão
+
+- intent: print
+  examples: |
+   - imprimir
+
+- intent: tree
+  examples: |
+   - árvores binárias

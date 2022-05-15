@@ -1,0 +1,51 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"active_loop\": {\"name\": \"bs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}]": "action_deactivate_loop",
+      "[{\"active_loop\": {\"name\": \"bs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}]": "utter_bs_pause",
+      "[{\"active_loop\": {\"name\": \"bs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_bs_pause\"}, \"user\": {\"intent\": \"ajuda\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"dfs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}]": "action_deactivate_loop",
+      "[{\"active_loop\": {\"name\": \"dfs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}]": "utter_dfs_pause",
+      "[{\"active_loop\": {\"name\": \"dfs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_dfs_pause\"}, \"user\": {\"intent\": \"ajuda\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"qs_form\"}}]": "utter_congratulate",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"qs_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_congratulate\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"dfs_form\"}}]": "utter_congratulate",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"dfs_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_congratulate\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"qs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}]": "action_deactivate_loop",
+      "[{\"active_loop\": {\"name\": \"qs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}]": "utter_qs_pause",
+      "[{\"active_loop\": {\"name\": \"qs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_qs_pause\"}, \"user\": {\"intent\": \"ajuda\"}}]": "action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"bs_form\"}}]": "utter_congratulate",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"bs_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_congratulate\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"utter_dfs\"}}, {\"active_loop\": {\"name\": \"dfs_form\"}, \"prev_action\": {\"action_name\": \"dfs_form\"}, \"user\": {\"intent\": \"dfs_exe\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"utter_bs\"}}, {\"active_loop\": {\"name\": \"bs_form\"}, \"prev_action\": {\"action_name\": \"bs_form\"}, \"user\": {\"intent\": \"bs_exe\"}}]": "do_not_predict_loop_action",
+      "[{\"prev_action\": {\"action_name\": \"utter_qs\"}}, {\"active_loop\": {\"name\": \"qs_form\"}, \"prev_action\": {\"action_name\": \"qs_form\"}, \"user\": {\"intent\": \"qs_exe\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "handling active loops and forms - qs_form",
+      "[{\"active_loop\": {\"name\": \"bs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "predicting default action with intent restart",
+      "[{\"active_loop\": {\"name\": \"qs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "handling active loops and forms - bs_form",
+      "[{\"active_loop\": {\"name\": \"dfs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "predicting default action with intent back",
+      "[{\"active_loop\": {\"name\": \"qs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_qs_pause\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "[{\"active_loop\": {\"name\": \"qs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"qs_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_congratulate\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"active_loop\": {\"name\": \"dfs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"dfs_form\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"dfs_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_congratulate\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"bs_form\"}}]",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"bs_form\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_congratulate\"}}]",
+      "[{\"active_loop\": {\"name\": \"bs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "handling active loops and forms - dfs_form",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"qs_form\"}}]",
+      "[{\"active_loop\": {\"name\": \"bs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_bs_pause\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "[{\"active_loop\": {\"name\": \"dfs_form\"}, \"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_deactivate_loop\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_dfs_pause\"}, \"user\": {\"intent\": \"ajuda\"}}]"
+    ]
+  }
+}
