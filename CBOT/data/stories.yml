@@ -105,6 +105,8 @@ stories:
   - action: utter_exes
   - intent: bs_exe
   - action: utter_bs_exe
+  - action: utter_bs_exe_um_um
+  - action: utter_bs_exe_um_dois
   - action: utter_bs_exe_dois
   - action: utter_exe_ask
   - action: utter_exe_ask_dois
@@ -120,6 +122,8 @@ stories:
   - action: utter_exes
   - intent: bs_exe
   - action: utter_bs_exe
+  - action: utter_bs_exe_um_um
+  - action: utter_bs_exe_um_dois
   - action: utter_bs_exe_dois
   - action: utter_exe_ask
   - action: utter_exe_ask_dois
@@ -132,11 +136,13 @@ stories:
   - action: utter_exes
   - intent: dfs_exe
   - action: utter_dfs_exe
+  - action: utter_dfs_exe_um_um
   - action: utter_dfs_exe_dois
   - action: utter_exe_ask
   - action: utter_exe_ask_dois
   - intent: afirmação
   - action: utter_dfs_exe_tres
+  - action: utter_dfs_exe_tres_um
   - action: dfs_form
   - active_loop: dfs_form
 
@@ -146,6 +152,7 @@ stories:
   - action: utter_exes
   - intent: dfs_exe
   - action: utter_dfs_exe
+  - action: utter_dfs_exe_um_um
   - action: utter_dfs_exe_dois
   - action: utter_exe_ask
   - action: utter_exe_ask_dois
@@ -154,18 +161,24 @@ stories:
 
 - story: REActivate bs
   steps:
+  - intent: resume
+  - action: utter_exe_resume
   - intent: bs_exe
   - action: bs_form
   - active_loop: bs_form
 
 - story: REActivate dfs
   steps:
+  - intent: resume
+  - action: utter_exe_resume
   - intent: dfs_exe
   - action: dfs_form
   - active_loop: dfs_form
 
 - story: REActivate qs
   steps:
+  - intent: resume
+  - action: utter_exe_resume
   - intent: qs_exe
   - action: qs_form
   - active_loop: qs_form
@@ -194,6 +207,17 @@ stories:
   - action: utter_exe_ask_dois
   - intent: negação
   - action: utter_okay
+
+- story: try to code
+  steps:
+  - intent: code
+  - action: utter_code
+
+- story: still doesn't know
+  steps:
+  - intent: unknown
+  - action: utter_unknown
+
 
 
 

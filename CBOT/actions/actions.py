@@ -151,7 +151,7 @@ class AskForDFSUm(Action):
     def run(
         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
     ) -> List[EventType]:
-        dispatcher.utter_message(text="Você consegue escrever a primeira recursão ma primeira linha incompleta?")
+        dispatcher.utter_message(text="Você consegue escrever a recursão na primeira linha incompleta?")
         return []
     
 
@@ -162,7 +162,7 @@ class AskForDFSDois(Action):
     def run(
         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
     ) -> List[EventType]:
-        dispatcher.utter_message(text="Você consegue escrever a linha respectiva para aa impressão do valor?")
+        dispatcher.utter_message(text="Você consegue escrever a segunda linha incompleta respectiva para aa impressão do valor?")
         return []
 
 class AskForDFSTres(Action):
@@ -172,7 +172,7 @@ class AskForDFSTres(Action):
     def run(
         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
     ) -> List[EventType]:
-        dispatcher.utter_message(text="Escreva a linha de código que acessa o nodo-filho direito.")
+        dispatcher.utter_message(text="Escreva a terceira linha incompleta de código que acessa o nodo-filho direito.")
         dispatcher.utter_message(image="https://i.imgur.com/YELpjdo.png")
         return []    
 
@@ -223,7 +223,7 @@ class ValidateQSForm(FormValidationAction):
             if slot_value in self.qs_dois_db():
                 dispatcher.utter_message(text="Correto!")
                 dispatcher.utter_message(text="Certo, a partir deste if vamos então colocar os elementos menores que o pivô na parte esquerda da partição utilizando a função swap.")
-
+                dispatcher.utter_message(text="Observe na imagem anterior que que ao incrementar um ao indexador i em cada swap podemos  indicar a parte da partição em que estes números menores que o pivô estão, dividindo a partição entre números menores e maiores durante a precursão da partição.")
                 return {"qs_dois": slot_value}
             else:
                 dispatcher.utter_message(text="Tente de novo")
@@ -238,7 +238,9 @@ class ValidateQSForm(FormValidationAction):
         domain: DomainDict,
     ) -> Dict[Text, Any]:
             if slot_value in self.qs_tres_db():
-                dispatcher.utter_message(text="Correto!")
+                dispatcher.utter_message(text="Para encerrar a lógica de particionar a array, devemos colocar o pivô na sua posição correta na partição , já que esse se encontra atualmente na parte dos números maiores, claro, este deve estar entre os números maiores e números menores que o próprio pivô.")
+                dispatcher.utter_message(text="Vamos considerar que em nosso exemplo, a precursão da partição já ocorreu e colocamos os números maiores e menores que o pivô 70 em seus lados. Veja como agora o 70 deve ser colocado na posição i + 1, sendo arr[3] = 50, já que 50 foi o último número colocado naquele lado.")
+                dispatcher.utter_message(image="https://i.imgur.com/mxKkRK3.png")
                 return {"qs_tres": slot_value}
             else:
                 dispatcher.utter_message(text="Tente de novo")
@@ -305,7 +307,7 @@ class AskForQSTres(Action):
     def run(
         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
     ) -> List[EventType]:
-        dispatcher.utter_message(text="Observe na imagem anterior que que ao incrementar um ao indexador i em cada swap podemos  indicar a parte da partição em que estes números menores que o pivô estão, dividindo a partição entre números menores e maiores durante a precursão da partição. Agora complete a função swap(), indicando as posições da partição que devem ser trocadas de lugar.")
+        dispatcher.utter_message(text="Agora complete a função swap(), indicando as posições da partição que devem ser trocadas de lugar.")
         return []
 
 class AskForQSQuatro(Action):
@@ -315,9 +317,6 @@ class AskForQSQuatro(Action):
     def run(
         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
     ) -> List[EventType]:
-        dispatcher.utter_message(text="Para encerrar a lógica de particionar a array, devemos colocar o pivô na sua posição correta na partição , já que esse se encontra atualmente na parte dos números maiores da partição, claro, este deve estar entre os números maiores e números menores que o próprio pivô.")
-        dispatcher.utter_message(text="Vamos considerar que em nosso exemplo, a precursão da partição já ocorreu e colocamos os números maiores e menores que o pivô 70 em seus lados. Veja como agora o 70 deve ser colocado na posição i + 1, sendo arr[3] = 50, já que 50 foi o último número colocado naquele lado.")
-        dispatcher.utter_message(image="https://i.imgur.com/mxKkRK3.png")
         dispatcher.utter_message(text="Lembre que você já sabe onde os números menores que o pivô terminam já que você tem o indexador i, agora, complete a função swap entre o elemento pivô e o elemento no limite de i.")
         return []
 

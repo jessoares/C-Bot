@@ -19,7 +19,10 @@ intents:
   - operar 
   - recursar
   - print
-  - tree
+  - tree 
+  - resume
+  - code
+  - unknown
 
 
 responses:
@@ -94,15 +97,12 @@ responses:
   utter_qs_exe_dois:
   - text: "Complete o processo chave em um quicksort, a criação de partições, nesta, é preciso ordenar o elemento pivô ao comparara-lo com cada elemento da partição"
     image: "https://i.imgur.com/kOTRAse.png"
+  
+  utter_exe_pause:
+  - text: "Ok! vamos pausar esse exercício. Se você desejar voltar para resolver-lo me peça para retomar o exercício"
 
-  utter_bs_pause:
-  - text: "Ok! vamos pausar esse exercício. Se você desejar voltar para resolver-lo me peça para voltar para o exercício de busca binária."
-  
-  utter_dfs_pause:
-  - text: "Ok! vamos pausar esse exercício. Se você desejar voltar para resolver-lo me peça para voltar para o exercício de busca em profundidade."
-  
-  utter_qs_pause:
-  - text: "Ok! vamos pausar esse exercício. Se você desejar voltar para resolver-lo me peça para voltar para o exercício de quicksort."
+  utter_exe_resume:
+  - text: "Qual exercício você quer retormar?"
 
   utter_operar:
   - text: 'Operações são um dos fundamentos em qualquer linguagem de programação, um dos tipos de operação possíveis são as operações aritméticas, nessas operações podemos utilizar operadores como "+" e "*" para realizar computações matemáticas e lógicas em operandos (variáveis).'
@@ -166,7 +166,11 @@ responses:
   utter_exe_ask_dois:
   - text: "Você também pode pausar o quiz para me perguntar qualquer coisa se assim desejar, basta me pedir isso durante o quiz."
 
-
+  utter_code:
+  - text: "Opa! Isso é uma linha de código! Talvez seja melhor você inserir esta linha em um quiz?"
+  
+  utter_unknown:
+  - text: "Desculpe, ainda não sei como responder isso."
 
 
 actions:

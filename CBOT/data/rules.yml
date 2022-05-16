@@ -9,7 +9,7 @@ rules:
   - intent: ajuda
   - action: action_deactivate_loop
   - active_loop: null
-  - action: utter_bs_pause
+  - action: utter_exe_pause
 
 - rule: ajuda dfs
   condition:
@@ -18,7 +18,7 @@ rules:
   - intent: ajuda
   - action: action_deactivate_loop
   - active_loop: null
-  - action: utter_dfs_pause
+  - action: utter_exe_pause
 
 - rule: ajuda qs
   condition:
@@ -27,7 +27,7 @@ rules:
   - intent: ajuda
   - action: action_deactivate_loop
   - active_loop: null
-  - action: utter_qs_pause
+  - action: utter_exe_pause
 
 - rule: end bs
   condition:
@@ -68,7 +68,6 @@ rules:
   - action: action_reset_qs_tres_slot
   - action: action_reset_qs_quatro_slot
   - action: action_reset_qs_cinco_slot
- 
 
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:

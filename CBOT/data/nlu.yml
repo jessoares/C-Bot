@@ -82,7 +82,7 @@ nlu:
     - quero pausar
     - pause
     - pausar exercicio
-    - quero pausar o exercicip
+    - quero pausar o exercicio
     - pausar
     - pare
     - parar
@@ -106,19 +106,110 @@ nlu:
    - quicksort
    - quick
    - sort
+   - ordenar
+   - ordenação de array
+ 
 
 - intent: operar
   examples: |
-   - operação
+   - operação 
+   - operar
+   - somar
+   - multiplicar
+   - subtrair
+   - dividir
+   - como somar variáveis
+   - como operar variaveis
+   - operações
+   - operações aritimeticas
+   - aritméticas
+   - operações aritiméticas
+   - calculo
+   - como fazer um calculo
+   - fazer um calculo
 
 - intent: recursar
   examples: |
-   - recursão
+   - recursão 
+   - recursar
+   - como fazer uma recursão
+   - como escrever uma recursão 
+   - como recursar
+   - quero aprender recursão
+   - como se faz recursão
+   - recursão de uma função 
+   - recursões
+   - quero aprender recursões 
+   - recursar função
+  
 
 - intent: print
   examples: |
    - imprimir
+   - print
+   - aprender impressão
+   - como realizar uma impressão
+   - como imprimir variáveis
+   - como fazer um print
+   - como escrever um print
+   - como printar na tela
+   - como imprimir valores na tela
+   - como imprimir variaveis na tela
+   - como fazer uma impressão
+   - como realizar um print
+   - como fazer um print
+
+- intent: code
+  examples: |
+   - meio=e+(d-ea)/2;
+   - return buscaBinaria(arr,meio+1,dir,x);
+   - printEmOrdem(nodo->esq);
+   - printf("%d",nodo->data);
+   - for(j=inf;j<=suaap-1;j++)
+   - swap(&arr[sadi+1],&arr[sup];
+   - quickSort(arr,inf,pi-1);  
+
+- intent: resume
+  examples: |
+   - Quero voltar ao exercicio
+   - Voltar
+   - resumir
+   - retomar
+   - retomar exercicio
+   - voltar exercicio
+   - voltar ao exercicio
+   - resumir o exercicio
+
+- intent: unknown
+  examples: |
+   - arrays
+   - loops
+   - if
+   - else
+   - for
+   - while
+   - tudo bem
+   - como voce esta
+   - estou bem
+   - odeio você
+   - te amo
+   - te odeio
+   - o que você esta fazendo?
+   - amor
+   - odio
+   - será que vai chover hoje?
+   - chuva
+   - tempo
+
 
 - intent: tree
   examples: |
-   - árvores binárias
+   - árvore
+   - árvores
+   - árvore binária
+   - árvores binária
+   - estrutura de árvores binárias
+   - declarar árvore binária
+   - o que é uma árvore binária
+   - o que é uma árvore
+ 
