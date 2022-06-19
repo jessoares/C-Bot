@@ -93,13 +93,17 @@ nlu:
 
 - intent: bs_exe
   examples: |
-   - procura binária
+   - busca binária
    - binária
+   - busca
+   - encontrar valor array
 
 - intent: dfs_exe
   examples: |
    - busca em profundidade
-   - busca 
+   - em profundidade
+   - profundidade
+   - percorrer árvore
 
 - intent: qs_exe
   examples: |

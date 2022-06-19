@@ -29,8 +29,8 @@ class ValidateBSForm(FormValidationAction):
         
             if slot_value in self.bs_um_db():
                 dispatcher.utter_message(text="Certo! Agora precisamos comparar o valor dentro da posição 'meio' com 'x', assim podemos desconsiderar metade da partição em que 'x' não poderá estar.")
-                dispatcher.utter_message(text="Como você pode ver no código, já há uma condição if que verifica se 'x' vai se encontrar na metade inferior da partição, observe que uma chamada recursiva é feita,os seus paramêtros sinalizam que a função vai ser executada apenas tendo em conta somente os valores menores que 'arr[m]'")
-                dispatcher.utter_message(text="Mas e a chamada recursão para se 'arr[m]' for menor que 'x'? Isso significa que 'x' tem que estar após 'arr[m]'. Seguindo nosso exemplo, observe na imagem como os paramêtros serão encontrados.")
+                dispatcher.utter_message(text="Como você pode ver no código, já há uma condição if que verifica se 'x' vai se encontrar na metade inferior da partição, observe que uma chamada recursiva é feita e os seus parãmetros sinalizam que a função vai ser executada apenas tendo em conta somente os valores menores que 'arr[m]'")
+                dispatcher.utter_message(text="Mas e a chamada recursão para se 'arr[m]' for menor que 'x'? Isso significa que 'x' tem que estar após 'arr[m]'. Seguindo nosso exemplo, observe na imagem como os parâmetros serão encontrados.")
                 dispatcher.utter_message(image="https://i.imgur.com/hwb76nP.png")
                 return {"bs_um": slot_value}
             else:

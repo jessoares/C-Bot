@@ -27,25 +27,25 @@ intents:
 
 responses:
   utter_intro:
-  - text: "Olá! Eu sou Ali-Cbot e posso lhe ensinar sobre alguns conceitos e algoritmos da linguagem de programação C."
+  - text: "Olá! Eu sou C-BOT e posso lhe ensinar sobre alguns conceitos e algoritmos da linguagem de programação C."
 
   utter_intro_dois:
   - text: "Você deseja saber detalhes sobre o que posso oferecer?"
   
   utter_explain:
-  - text: " Meu objetivo é ajudar programadores à entender a lógica por trás de certos algoritmos famosos, mas também posso explicar certos conceitos de programação para você."
+  - text: " Meu objetivo é ajudar programadores a entender a lógica por trás de certos algoritmos famosos, mas também posso explicar certos conceitos de programação para você."
   
   utter_explain_dois:
   - text: " Se você quer aprender sobre um certo conceito de programação, você pode me perguntar algo como: 'O que é recursão?' ou 'Como faço uma recursão?'."
 
   utter_explain_tres:
-  - text: " Já se você quer tentar aprender sobre o funcionamento e estrutura de um dos algoritmos mais famososos que usam a linguagem C, você pode me dizer 'Quero fazer um exercício' ou 'Quero fazer um quiz'."
+  - text: " Já se você quer tentar aprender sobre o funcionamento e estrutura de um dos algoritmos mais utilizados que usam a linguagem C, você pode me dizer 'Quero fazer um exercício' ou 'Quero fazer um quiz'."
 
   utter_adeus:
   - text: "Até mais!"
   
   utter_exes:
-  - text: "Posso-lhe ajudar à entender e lembrar a lógica por trás de três conhecidos e importantes programas em C, estes são: Procura binária, Busca em profundidade e Quicksort. Qual destes você deseja aprender?"
+  - text: "Posso-lhe ajudar à entender e lembrar a lógica por trás de três conhecidos e importantes programas em C, estes são: Busca Binária, Busca em profundidade e Quicksort. Qual destes você deseja aprender?"
   
   utter_bs_exe:
   - text: "Um algoritmo de busca binária encontra a posição de 'x' dentro de uma array ordenada."
@@ -72,7 +72,7 @@ responses:
   - text: "Em um algoritmo de busca em profundidade, deve-se percorrer cada nodo de uma árvore binária a partir de sua raiz, atingindo a profundidade máxima de cada caminho."
 
   utter_dfs_exe_um_um:
-  - text: "O percorrer da árvore e a impressão de seus valores geralmente se dá por três ordens diferentes: Em-ordem; Pre-ordem; e Pós-ordem, porém neste exemplo focaremos no método por trás da travessia Em-ordem."
+  - text: "O percorrer da árvore e a impressão de seus valores geralmente se dá por três ordens diferentes: Em-ordem; Pre-ordem; e Pós-ordem, porém neste exemplo o foco vai estar no método por trás da travessia Em-ordem."
 
   utter_dfs_exe_dois:
   - text: "O código incompleto do algoritmo é:"
@@ -99,7 +99,7 @@ responses:
     image: "https://i.imgur.com/kOTRAse.png"
   
   utter_exe_pause:
-  - text: "Ok! vamos pausar esse exercício. Se você desejar voltar para resolver-lo me peça para retomar o exercício"
+  - text: "Ok! Vamos pausar esse exercício. Se você desejar voltar para resolve-lho me peça para retomar o exercício"
 
   utter_exe_resume:
   - text: "Qual exercício você quer retormar?"
