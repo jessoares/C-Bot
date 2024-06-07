@@ -1,7 +1,7 @@
-# C-BOT
+# C-Bot
 
-C-BOT é um chatterbot que almeja ensinar conceitos de programação ao usuário através de uma conversa no Messenger. 
+C-Bot é um chatterbot que almeja ensinar conceitos de programação ao usuário através da aplicação Messenger dentro do Facebook. 
 
-Atualmente o chatterbot se encontra indisponível para uso.
+Atualmente o funcionamento do chatterbot se encontra offline.
 Detalhes da implementação e funcionamento se encontram no pdf.
 
